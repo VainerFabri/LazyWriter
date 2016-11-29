@@ -4,6 +4,9 @@
         
         <meta charset="utf-8" />
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     </head>
     
     <body>
@@ -11,37 +14,26 @@
         <header>
             <div class="background">
                 <center><img src="img/logo.png" /></center>
+                </br>
                 
-                <div class="form-group">
-                    <label for="coment">Clique no botão abaixo para começar a gravar.</label></br></br>
-                    <div class="col-sm-12">
-                        <textarea class="form-control" rows="8" id="comment"></textarea></br></br></br>
+                <!-- Floating Multiline Textfield -->
+                <form action="#">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <i><label for="exampleTextarea">Pressione o botão abaixo para gravar...</label></i>
+                        <textarea class="form-control" id="exampleTextarea" rows="8"></textarea>
+                      </div>
                     </div>
+                </form>
 
-                    <div class="col-lg-3">
-                        <div class="row">
-                            
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <input type="button" value="WORD"/> 
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <input type="button" value="PDF"/>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="row">
-                        </div>
-                    </div>
-
-                </div>
+                
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <i class="material-icons">mic none</i>
+                </button>
+            
+                <footer>
+                    teste
+                </footer>
                 
             </div>
         </header>

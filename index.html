@@ -7,21 +7,22 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <link rel="stylesheet" href="css/tema.css" type="text/css" media="screen">
     </head>
     
     <body>
         <script src="js/bootstrap.min.js"></script>
         <header>
-            <div class="background">
+            <div id="background">
+            <!--AQUI FICA TODO O CORPO DA PÁGINA-->
                 <center><img src="img/logo.png" /></center>
                 </br>
-                
-                <!-- Floating Multiline Textfield -->
+        
                 <form action="#">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <i><label for="exampleTextarea">Pressione o botão abaixo para gravar...</label></i>
-                        <textarea class="form-control" id="exampleTextarea" rows="8"></textarea>
+                        <i><label for="Textarea">Pressione o botão abaixo para gravar...</label></i>
+                        <textarea class="form-control" id="Textarea" rows="8" disabled></textarea>
                       </div>
                     </div>
                 </form>
@@ -30,43 +31,28 @@
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                     <i class="material-icons">mic none</i>
                 </button>
-                
-                <br><br>
-            <footer>
-                <div class="navbar navbar-inverse navbar-fixed-bottom">
-                    <div class="container">
-                        <div class="navbar-collapse collapse" id="footer-body">
-                            <ul class="nav navbar-nav">
-                                <font color="white">
-                                    2016. Lazy Writer. Todos os direitos reservados.
-                                </font>
-                            </ul>
-                        </div>
-                    </div>
+                <br><br><br>
+            <!--BOTÕES PARA EXPORTAR PDF OU DOCX-->
+                <div class="col-md-3"></div>
+
+                <div class="col-md-3">
+                    <input type="image" id="word" src="img/word.png" onsubmit="#" width="50px"/>
                 </div>
-            </footer>
+                <div class="mdl-tooltip" data-mdl-for="word">
+                    Exportar como <strong>.docx</strong>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="image" id="pdf" src="img/pdf.png" onsubmit="#" width="50px"/>
+                </div>
+                <div class="mdl-tooltip" data-mdl-for="pdf">
+                    Exportar como <strong>.pdf</strong>
+                </div>
+
+                <div class="col-md-3"></div>
+            <!--FIM DAS DIV'S DOS BOTÕES-->    
             </div>
+        <!--FIM DO CORPO DA PÁGINA-->
         </header>
     </body>
-    
-    <style>
-    .html, body {height:100%;}
-        
-    .background
-    {
-        background-image: url('img/wall.jpg');
-        background-repeat: no-repeat;
-        background-size:100%;
-        bottom: 0;
-        color: black;
-        left: 0;
-        overflow: auto;
-        padding: 3em;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 0;
-        background-size: cover;
-    }
-    </style>
 </html>
